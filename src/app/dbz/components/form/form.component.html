@@ -1,0 +1,19 @@
+<h4>Add on list</h4>
+<form class="row" (ngSubmit)="emitCharacter()">
+
+    <input type="text" 
+    [(ngModel)]="character.name" placeholder="Name" 
+    name="name"
+    class="form-control mb-2">
+    
+    <input type="number" 
+    [(ngModel)]="character.power" placeholder="Power" 
+    name="power"
+    class="form-control mb-2">
+    
+    <button 
+    class="btn btn-primary" 
+    type="submit">
+        Add
+    </button>
+</form>
